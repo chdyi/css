@@ -1,0 +1,149 @@
+body,h1,h2,h3,h4,h5,p,dl,dd,ul,ol,form,input,textarea,th,td,select,figure { margin:0; padding:0; }
+article,aside,dialog,footer,header,section,footer,nav,figure,menu{display:block};
+em { font-style:normal; }
+li { list-style:none; }
+a{ text-decoration:none; outline:none; color: #000; font-weight: bold;}
+img { border:none; vertical-align:top; }
+body { font-size:16px; font-family:"微软雅黑",sans-serif;}
+
+.clear{zoom:1;}
+.clear:after{content:'';display:block;; clear:both;}
+.fl{ float:left;}
+.fr{ float:right;}
+html,body{
+	width: 100%;
+}
+/*head*/
+nav{ 
+	width: 1278px;
+	padding: 10px 0 20px 0;
+	margin: 0 auto 50px auto;
+	border-bottom: 2px solid #999;
+}
+ul li{ 
+	margin-left: 160px;
+	float: left;
+	}
+ul li:nth-child(odd) a{
+	color:#f00;
+}
+ul :first-child{
+	margin: 0;
+}
+ul li a:hover{
+	color: #FE0105;
+	text-decoration: underline;
+}
+/*head end*/
+	aside,.content,.content img,hgroup{
+		float: left;
+	}
+	hgroup{
+		 /*width: 450px;*/ 
+		 margin-left: 5px;
+	}
+	.middle{
+		width: 1278px;
+		margin: 0 auto;
+		padding-bottom: 20px;
+		border-bottom: 1px solid #666;
+	}
+	aside {
+		margin-right: 30px;
+		padding-right: 10px;
+		border-right: 1px solid #999;
+	}
+	aside img{
+		width: 128px;
+		height: 182px;
+	}
+	aside a{
+		float: left;
+		margin-right: 10px;
+	}
+	aside span{
+		display: block;
+		width: 100px;
+		margin: 10px auto;
+		text-align: center;
+		border: 1px solid #999;
+		border-radius: 5px;
+	}
+	aside h1{
+		font-size: 20px;
+	}
+	.oscar-main{
+		height: 400px;
+	}
+	.button{
+		width: 300px;
+		height: 80px;
+		margin-top: 10px;
+		display: inline-block;
+		background: #f00;
+		border-radius: 5px;
+		color: #fff;
+		line-height: 80px;
+		text-align: center;
+	}
+	hgroup h1{
+		font-size: 100px;
+		line-height: 90px;
+	}
+	hgroup h2{
+		font-size: 46px;
+	}
+	hgroup p{
+		font-size: 16px;
+		line-height: 40px;
+	}
+
+	/*footer*/
+	footer{
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
+	footer p{
+		font-size: 14px;
+		text-align: center;
+	}
+
+
+	/*response*/
+	@media screen and (max-width: 1278px){
+		nav{ 
+			width: 100%;
+			padding: 10px 0 20px 0;
+			margin: 0 auto 50px auto;
+			border-bottom: 2px solid #999;
+		}
+		ul li{ 
+			margin-left: 0;
+			margin-bottom: 20px;
+			float: none;
+			text-align: center;
+		}
+		.middle{
+			width: 100%;
+		}
+		aside{
+			width: 100%;
+			margin: 0 auto;
+			padding: 0;
+			border: none;text-align: center;
+		}
+		aside a{
+			width: 50%;
+			margin: 0;
+		}
+		.content{
+			text-align: center;
+			float: none;
+		}
+		.content .oscar-main{
+			float: none;
+		}
+		hgroup{
+			float: none;
+		}
+	}
